@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+    </header>
+    
+    <main class="principal">
+        <img class="principal__logo" src="./Images/Logo.png" alt="Logo de Alura Latam"/>
+
+        <article class="articulo__1">  
+            <textarea class="textArea__1" placeholder="Ingrese el texto aqui"></textarea>
+            <h6 class="orientacion__textArea">
+                <img src="./Images/bi_exclamation-circle-fill.png" alt="Signo de exclamacion">
+                Solo letras minusculas y sin acentos
+            </h6>
+            <div class="principal__div__button">
+                <button class="principal__button" onclick="manejarBotonEncriptar()">Encriptar</button>
+                <button class="principal__button" onclick="manejarBotonDesencriptar()">Desencriptar</button>
+            </div> 
+        </article>
+
+        <article class="articulo__2">
+            <textarea class="textArea__2"></textarea>
+            <img class="imagen__muñeco" src="./Images/Muñeco.png" alt="Muñeco"> 
+            <h2 class="titulo__articulo__2">Ningun mensaje fue encontrado</h2>
+            <p class="parrafo__articulo__2">Ingrese el texto que desea encriptar o desencriptar</p> 
+            
+            <div class="principal__div__button">
+                <button class="copiar__button" onclick="copiarAlPortapapeles()">Copiar</button>
+            </div>
+        </article>  
+
+    </main>
+    <footer>
+        <p class="footer">Desarrollado por Mariana Rivas</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

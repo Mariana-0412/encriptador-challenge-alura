@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fuente: "Inter", sans-serif;
+    --color-principal: #F3F5FC;
+    --color-texto: #495057;
+    --color-botones:#D8DFE8;
+    --color-borde-texto-botones: #0A3871;
+    --color-fondo-resultado: #FFFFFF;
+}
+
+body {
+    background-color: var(--color-principal);
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+
+.principal__logo {
+    width: 7.5rem;
+    height: 3rem;
+}
+
+.articulo__1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 8% 1% 0% 1%;
+
+}
+
+.textArea__1 {
+    display: flex;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0A3871;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-principal);
+    text-transform: lowercase;
+    border: 0px;
+    resize: none; 
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.textArea__1:focus {
+    outline: none; 
+}   
+
+.orientacion__textArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--fuente);
+    font-size: 0.75rem;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+}
+   
+.principal__div__button {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    gap: 24px;
+    
+}
+
+.principal__button {
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: 1rem;
+    border-radius: 24px ;
+    border: 1px solid var(--color-borde-texto-botones);;
+    color: var(--color-borde-texto-botones);
+    background-color: var(--color-botones);
+}
+
+.articulo__2 {   
+    width: 16rem;
+    height: 31rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-fondo-resultado);
+    border-radius: 32px;
+    gap: 32px;
+}
+
+.textArea__2 {
+    display: none;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 400;
+    color: #0A3871;
+    height: 100%;
+    text-transform: lowercase;
+    border: 0px;
+    resize: none; 
+    margin-top: 10%;
+}
+
+.textArea__2:focus {
+    outline: none; 
+}
+
+.imagen__muñeco {
+        display: block;
+       width: 13rem; 
+    margin: 5%;
+}
+
+
+.titulo__articulo__2 {
+    display: block;
+    color: #343A40;
+    font-family: var(--fuente);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center; 
+}
+
+.parrafo__articulo__2 {
+    display: block;
+    font-family: var(--fuente);
+    font-size: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    color: var(--color-texto);
+    margin-bottom: 10%;
+}
+
+.principal__button:hover {
+    color: var(--color-fondo-resultado);
+    background-color: var(--color-borde-texto-botones);
+    padding: 1rem; 
+}
+
+.copiar__button {
+    padding: 1.5rem;
+    width: 13rem;
+    margin: 6%;
+    text-align: center;
+    font-family: var(--fuente);
+    font-size: 1rem;
+    border-radius: 24px;
+    border: 1px solid var(--color-borde-texto-botones);
+    color: var(--color-borde-texto-botones);
+    background-color: var(--color-botones);
+}
+
+.copiar__button {
+    display: none; 
+}
+
+.footer {
+    background-color:var(--color-fondo-resultado);
+    padding: 0.50rem;
+    text-align: center;
+    font-family: var(--fuente);
+    width: 100%;
+    color: var(--color-texto);
+    align-content: end;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height: 950px) {
+    .footer {
+        position: static;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .principal {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* .footer {
+        position: static;
+        bottom: 0;
+    } */
+
+    .articulo__1 {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .titulo__articulo__2 {
+        margin-top: 10%
+    }
+ 
+    .imagen__muñeco {   
+        display: none;
+    }
+
+    .textArea__2 {
+        height: 10rem;
+    }
+
+    .articulo__2 {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .principal__div__button {
+        flex-direction: column;
+    }
+
+    .copiar__button {
+        width: auto;
+        padding-right: 2.1rem;
+    }
+
+    .principal__button {
+        width: auto;
+    }
+}
+    
